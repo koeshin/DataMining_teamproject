@@ -52,7 +52,7 @@ DT에서 찾은 중요 변수 ' Daudience ', ' A1audience ', ' A2audience ', ' D
 ### 적정 clusters 찾기
 cluster=2~9로 하여 inertia와 Silhouette Score 확인
 inertia
-<img width="80%" scr='https://user-images.githubusercontent.com/77971228/170224815-308a3d49-231f-4867-95f9-7f386e852b72.png'/>
+<img width="80%" scr='[https://user-images.githubusercontent.com/77971228/170224815-308a3d49-231f-4867-95f9-7f386e852b72.png](https://github.com/koeshin/DataMining_teamproject/issues/4#issue-1247798838)'/>
 Silhouette Score
 <img width="80%" scr='https://user-images.githubusercontent.com/77971228/170225112-03ba0082-001e-40a1-932c-ca0b81b73956.png'/>
 
