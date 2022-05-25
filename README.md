@@ -46,7 +46,8 @@ A2audience(2주간 누적관객수)는 labels(총 누적관객수)와 거의 비
 
 ![feature_important](https://user-images.githubusercontent.com/77971228/170222549-43a6ed19-4320-4c9f-b838-3cde5d1f00f0.png)'
 
-## Clustering
+## Clustering- 클러스터링은 데마 팀플 clustering 파일을 보시면 됩니다.(합친 파일에는 이유는 모르겠지만 clustering이 조금 다르게 되어서 발표자료와 동일한 데마팀플 파일을 봐주세요)
+
 ### 변수 설정
 DT에서 찾은 중요 변수 ' Daudience ', ' A1audience ', ' A2audience ', ' Dscreen ', ' A1screen ', ' A2screen ', ' Actscore '를 변수로 사용. labels는 직관적으로 데이터를 보기위해 카테고리형이 아닌 숫자로 표현.
 ### Scaling
