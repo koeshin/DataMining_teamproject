@@ -53,25 +53,33 @@ DT에서 찾은 중요 변수 ' Daudience ', ' A1audience ', ' A2audience ', ' D
 변수간의 크기차이로 인해 MinMaxScaler를 사용하여 scaling진행.
 ### 적정 clusters 찾기
 cluster=2~9로 하여 inertia와 Silhouette Score 확인
+
 inertia
-<img width="80%" scr='[https://user-images.githubusercontent.com/77971228/170224815-308a3d49-231f-4867-95f9-7f386e852b72.png](https://github.com/koeshin/DataMining_teamproject/issues/4#issue-1247798838)'/>
+
+![clu_inertia](https://user-images.githubusercontent.com/77971228/170224815-308a3d49-231f-4867-95f9-7f386e852b72.png)
+
 Silhouette Score
-<img width="80%" scr='https://user-images.githubusercontent.com/77971228/170225112-03ba0082-001e-40a1-932c-ca0b81b73956.png'/>
+
+![clu_silh](https://user-images.githubusercontent.com/77971228/170225112-03ba0082-001e-40a1-932c-ca0b81b73956.png)
 
 이너셔는 클러스터에 속한 샘플이 얼마나 가깝게 모여 있는지를 나타내는 값.
 일반적으로 클러스터의 개수가 늘어나면 클러스터 개개의 크기는 줄어들기 때문에, 이너셔 또한 함께 줄어든다. 클러스터가 4일 때 감소 그래프가 꺽이는 것을 볼수있는데 이 지점이후로는 클러스터 개수를 늘려도 클러스터에 밀접된 정도가 크게 개선되지 않고 클러스터의 개수가 많으면 효율이 떨어져서 적정 클러스터는 4라고 판단. 
 실루엣스코어에서도 클러스터가 4일 때 값이 3번째로 높았기 때문에 적절하다라고 판단.
 
 Clustering 진행후 시각화
-<img width="80%" scr='https://user-images.githubusercontent.com/77971228/170226456-ccfafbd2-5568-4a50-9705-2360f296ade1.png'/>
+
+![cluster_1](https://user-images.githubusercontent.com/77971228/170226456-ccfafbd2-5568-4a50-9705-2360f296ade1.png)
+
 변수가 7개여서 겹치는 점들이 발생.
 ### 차원축소 (PCA)
 2차원으로 자원 축소 진행
-<img width="80%" scr='https://user-images.githubusercontent.com/77971228/170226980-345b03f6-d775-4441-a93b-d9473888cf3f.png'/>
+
+ ![PCA](https://user-images.githubusercontent.com/77971228/170226980-345b03f6-d775-4441-a93b-d9473888cf3f.png)
+
 
 이전 보다 clustering이 잘 됨.
 ### Cluster별 비율 확인
-cluster별 비율 확인을 위해 카테고리형 열을 추가. 중앙값 이하 =0, 중앙값~상위 75%=1, 75%~ =2로 변환.
+cluster별 비율 확인을 위해 카테고리형 열을 추가. 중앙값 이하 = 0, 중앙값-상위 75% = 1, 75%이상 = 2로 변환.
 
 클러스터 특징:
 클러스터 0은 누적관객수 평균이 가장 낮고 전체연령가 비율이 가장 높은 그룹
