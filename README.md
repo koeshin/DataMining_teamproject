@@ -41,8 +41,10 @@ msl=4일때 테스팅 성능:0.7741
 
 ### 변수 중요도
 A2audience(2주간 누적관객수)는 labels(총 누적관객수)와 거의 비슷한 값을 가짐. 그러므로 변수 중요도를 구할때 제외하였음.
+
 중요도 그림
-<img width="80%" scr='https://user-images.githubusercontent.com/77971228/170222549-43a6ed19-4320-4c9f-b838-3cde5d1f00f0.png'>
+
+![feature_important](https://user-images.githubusercontent.com/77971228/170222549-43a6ed19-4320-4c9f-b838-3cde5d1f00f0.png)'
 
 ## Clustering
 ### 변수 설정
