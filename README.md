@@ -42,7 +42,7 @@ msl=4일때 테스팅 성능:0.7741
 ### 변수 중요도
 A2audience(2주간 누적관객수)는 labels(총 누적관객수)와 거의 비슷한 값을 가짐. 그러므로 변수 중요도를 구할때 제외하였음.
 중요도 그림
-<img width=80% scr='https://user-images.githubusercontent.com/77971228/170222549-43a6ed19-4320-4c9f-b838-3cde5d1f00f0.png'>
+<img width="80%" scr='https://user-images.githubusercontent.com/77971228/170222549-43a6ed19-4320-4c9f-b838-3cde5d1f00f0.png'>
 
 ## Clustering
 ### 변수 설정
@@ -52,20 +52,20 @@ DT에서 찾은 중요 변수 ' Daudience ', ' A1audience ', ' A2audience ', ' D
 ### 적정 clusters 찾기
 cluster=2~9로 하여 inertia와 Silhouette Score 확인
 inertia
-<img width=80% scr='https://user-images.githubusercontent.com/77971228/170224815-308a3d49-231f-4867-95f9-7f386e852b72.png'/>
+<img width="80%" scr='https://user-images.githubusercontent.com/77971228/170224815-308a3d49-231f-4867-95f9-7f386e852b72.png'/>
 Silhouette Score
-<img width=80% scr='https://user-images.githubusercontent.com/77971228/170225112-03ba0082-001e-40a1-932c-ca0b81b73956.png'/>
+<img width="80%" scr='https://user-images.githubusercontent.com/77971228/170225112-03ba0082-001e-40a1-932c-ca0b81b73956.png'/>
 
 이너셔는 클러스터에 속한 샘플이 얼마나 가깝게 모여 있는지를 나타내는 값.
 일반적으로 클러스터의 개수가 늘어나면 클러스터 개개의 크기는 줄어들기 때문에, 이너셔 또한 함께 줄어든다. 클러스터가 4일 때 감소 그래프가 꺽이는 것을 볼수있는데 이 지점이후로는 클러스터 개수를 늘려도 클러스터에 밀접된 정도가 크게 개선되지 않고 클러스터의 개수가 많으면 효율이 떨어져서 적정 클러스터는 4라고 판단. 
 실루엣스코어에서도 클러스터가 4일 때 값이 3번째로 높았기 때문에 적절하다라고 판단.
 
 Clustering 진행후 시각화
-<img width=80% scr='https://user-images.githubusercontent.com/77971228/170226456-ccfafbd2-5568-4a50-9705-2360f296ade1.png'/>
+<img width="80%" scr='https://user-images.githubusercontent.com/77971228/170226456-ccfafbd2-5568-4a50-9705-2360f296ade1.png'/>
 변수가 7개여서 겹치는 점들이 발생.
 ### 차원축소 (PCA)
 2차원으로 자원 축소 진행
-<img width=80% scr='https://user-images.githubusercontent.com/77971228/170226980-345b03f6-d775-4441-a93b-d9473888cf3f.png'/>
+<img width="80%" scr='https://user-images.githubusercontent.com/77971228/170226980-345b03f6-d775-4441-a93b-d9473888cf3f.png'/>
 
 이전 보다 clustering이 잘 됨.
 ### Cluster별 비율 확인
